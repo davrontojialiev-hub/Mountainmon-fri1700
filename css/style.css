@@ -1,0 +1,259 @@
+@import url(./fonts.css);
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style: none;
+    text-decoration: none;
+    font-family:"Share Tech Mono", sans-serif;
+    font-weight: 400;
+}
+
+body{
+    background: #FBFBFB;
+     } 
+
+.header{
+padding: 14px 0 12px ;
+background: #FFFFFF;
+  border-bottom: 1px solid #242424;
+}
+.container{
+max-width: 1140px;
+    width: 100%;
+    height: 100%; 
+    margin: 0 auto;
+    padding: 0 15px;
+}
+
+
+
+.header__nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.header__nav-list{
+    display: flex;
+   justify-content: center;
+    gap: 80px;
+}
+
+.header__nav-list_item-link{
+    font-family: "Share Tech Mono", sans-serif;
+font-weight: 400;
+font-size: 20px;
+color: #242424;
+transition: 0.3s;
+display: inline-block;
+}
+
+.header__nav-list_item-link:hover{
+    color: #242424;
+    transform: scale(1.2);
+}
+
+.header__nav-icons{
+    display: flex;
+    align-items: center;
+}
+
+.icon__hover path{
+    transition: 0.3s;
+}
+
+.icon__hover:hover path{
+    fill: #FFFFFF;
+}
+
+.banner{
+    height: 90svh;
+    background: url(../img/back.png) no-repeat center / cover;
+}
+
+
+.banner__wrap {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end; 
+    align-items: center;
+    gap: 40px;
+    padding-bottom: 56px; 
+}
+
+.banner__title{
+    font-family: "Share Tech Mono", sans-serif;
+color: #242424;
+font-weight: 400;
+font-size: 84px;
+}
+
+.banner__link{
+       display: block;                 
+    text-align: center;  
+   font-family: "Share Tech Mono", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+    color: #000000;
+     border: 2px solid black;
+border-width: 2px;
+ padding: 16px 105px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+
+
+.Mountain{
+     margin: 146px;
+     display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.Mountain__wrap{
+     display: flex;
+    gap: 20px;
+     align-items: flex-start;
+    justify-content: center; 
+}
+
+.Mountain__wrap:first-child{
+    flex-direction: row-reverse;
+}
+
+
+  .Mountain__right{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    max-width: 451px;
+    width: 100%;
+
+}
+
+.Mountain__right-title {
+    display: flex;
+    align-items: center;
+     font-family: "Share Tech Mono", sans-serif;
+font-weight: 400;
+font-size: 40px;
+color: #242424;
+margin-bottom: 20px;
+}
+
+.Mountain__right-title--about{
+    gap: 16px;
+}
+
+.Mountain__right-title--catalog{
+    gap: 36px;
+}
+
+
+.Mountain__right-desc{
+    font-family: "Share Tech Mono", sans-serif;
+ font-weight: 400;
+font-size: 20px;
+color: #242424;
+letter-spacing: 0%;
+}
+
+.Mountain__right-desc p{
+     line-height: 1.5;
+     margin-bottom: 20px;
+}
+
+ .Mountain__left{
+    max-width: 639px;
+    width: 100%; 
+ }
+
+.Mountain__left img{
+    width: 100%;
+
+}
+
+.banner__link2{
+    display: inline-block;
+   font-family: "Share Tech Mono", sans-serif;
+   font-weight: 400;
+   font-size: 24px;
+    color: #000000;
+     border: 2px solid black;
+border-width: 2px;
+ padding: 16px 105px;
+line-height: 100%;
+letter-spacing: 0%;
+}
+
+.footer{
+    background: #FFFFFF;
+    padding: 40px 0;
+      border-top: 1px solid #242424;
+}
+
+.footer__wrap{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.footer__column.contacts{
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.footer__title{
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 20px;
+    color: #242424;
+    margin-bottom: 16px;
+    line-height: 90%;
+    letter-spacing: 0%;
+}
+
+.footer__text{
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #242424;
+    line-height: 1.5;
+}
+
+.footer__contacts{
+padding-left: 0px;
+    margin: 0;
+}
+
+.footer__contacts li{
+    display: list-item;
+    list-style-type: disc;
+    list-style-position: inside;
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;
+    color: #242424;
+    margin-bottom: 20px;
+line-height: 1.2;
+}
+
+.footer__contacts a{
+    color: #242424 !important;
+    cursor: pointer;
+}
+
+.footer__social{
+    display: flex;
+    gap: 42px;
+}
+
+.footer__social a img{
+    width: 24px; 
+    height: 24px;
+}
