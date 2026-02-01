@@ -73,7 +73,7 @@ display: inline-block;
 .banner{
     height: 90svh;
     background: url(../img/back.png) no-repeat center / cover;
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 

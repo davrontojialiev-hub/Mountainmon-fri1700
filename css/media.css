@@ -60,7 +60,7 @@ max-width: none;
 
 @media screen and (max-width: 768px) {
     .banner{
-        margin-bottom: 50px;
+        margin-bottom: 30px;
     }
     .banner__wrap {
         padding-top: 160px;      
