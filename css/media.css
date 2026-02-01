@@ -59,9 +59,11 @@ max-width: none;
 }
 
 @media screen and (max-width: 768px) {
+    .banner{
+        margin-bottom: 70px;
+    }
     .banner__wrap {
-        padding-top: 10px;      
-        padding-bottom: 25px;   
+        padding-top: 160px;      
         gap: 15px;
     }
       .Mountain {

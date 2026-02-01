@@ -81,9 +81,9 @@ display: inline-block;
     flex-direction: column;
     justify-content: center; 
     align-items: center;
-    gap: 10px;
-    /* padding-bottom: 56px;  */
+    gap: 15px;
     max-width: 95%;
+    
 }
 
 .banner__title{
