@@ -13,6 +13,7 @@
 
 body{
     background: #FBFBFB;
+    min-width: 320px;
      } 
 
 .header{
@@ -78,60 +79,68 @@ display: inline-block;
 .banner__wrap {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end; 
+    justify-content: center; 
     align-items: center;
-    gap: 40px;
-    padding-bottom: 56px; 
+    gap: 10px;
+    /* padding-bottom: 56px;  */
+    max-width: 95%;
 }
 
 .banner__title{
     font-family: "Share Tech Mono", sans-serif;
 color: #242424;
 font-weight: 400;
-font-size: 84px;
+ font-size: clamp(28px, 6vw, 45px);
+ text-align: center;
+ white-space: nowrap;
 }
 
 .banner__link{
-       display: block;                 
+       display: inline-block;                 
     text-align: center;  
    font-family: "Share Tech Mono", sans-serif;
    font-weight: 400;
-   font-size: 24px;
+   font-size: 16px;
     color: #000000;
      border: 2px solid black;
 border-width: 2px;
- padding: 16px 105px;
-line-height: 100%;
+ padding: 12px 60px;
 letter-spacing: 0%;
 }
 
-
+.banner__link2{
+    display: inline-block;
+    font-family: "Share Tech Mono", sans-serif;
+    font-weight: 400;
+    font-size: 16px;      
+    color: #000000;
+    border: 2px solid black;
+    padding: 12px 60px;    
+    line-height: 100%;
+    text-align: center;
+}
 
 .Mountain{
-     margin: 146px;
+     margin: 146px auto;
      display: flex;
     flex-direction: column;
     gap: 80px;
 }
 
 .Mountain__wrap{
-     display: flex;
+     display: flex; 
     gap: 20px;
      align-items: flex-start;
-    justify-content: center; 
+      justify-content: flex-start; 
 }
-
-.Mountain__wrap:first-child{
-    flex-direction: row-reverse;
-}
-
 
   .Mountain__right{
     display: flex;
     flex-direction: column;
     gap: 20px;
-    max-width: 451px;
+    max-width: none;
     width: 100%;
+    flex: 1;
 
 }
 
@@ -140,7 +149,7 @@ letter-spacing: 0%;
     align-items: center;
      font-family: "Share Tech Mono", sans-serif;
 font-weight: 400;
-font-size: 40px;
+font-size: clamp(1.563rem, 1.197rem + 1.83vw, 2.5rem);
 color: #242424;
 margin-bottom: 20px;
 }
@@ -160,6 +169,11 @@ margin-bottom: 20px;
 font-size: 20px;
 color: #242424;
 letter-spacing: 0%;
+display: -webkit-box;
+-webkit-line-clamp: 10;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    word-break: break-all;
 }
 
 .Mountain__right-desc p{
@@ -167,14 +181,15 @@ letter-spacing: 0%;
      margin-bottom: 20px;
 }
 
- .Mountain__left{
-    max-width: 639px;
-    width: 100%; 
- }
-
 .Mountain__left img{
-    width: 100%;
+     width: 100%;
+    height: auto;
+    display: block;
 
+}
+
+.Mountain__left{
+flex: 1;
 }
 
 .banner__link2{
@@ -199,7 +214,13 @@ letter-spacing: 0%;
 .footer__wrap{
     display: flex;
     justify-content: space-between;
-    align-items: flex-start;
+      flex-wrap: wrap; 
+    gap: 40px;  
+}
+
+.footer__column {
+    flex: 1;
+    min-width: 200px;  
 }
 
 .footer__column.contacts{
@@ -213,9 +234,7 @@ letter-spacing: 0%;
     font-weight: 400;
     font-size: 20px;
     color: #242424;
-    margin-bottom: 16px;
-    line-height: 90%;
-    letter-spacing: 0%;
+    margin-bottom: 8px;
 }
 
 .footer__text{
@@ -224,11 +243,13 @@ letter-spacing: 0%;
     font-size: 16px;
     color: #242424;
     line-height: 1.5;
+margin-bottom: 0;
 }
 
 .footer__contacts{
-padding-left: 0px;
+padding-left: 0;
     margin: 0;
+    list-style: none;
 }
 
 .footer__contacts li{
@@ -239,7 +260,7 @@ padding-left: 0px;
     font-weight: 400;
     font-size: 16px;
     color: #242424;
-    margin-bottom: 20px;
+    margin-bottom: 8px;
 line-height: 1.2;
 }
 
@@ -250,10 +271,36 @@ line-height: 1.2;
 
 .footer__social{
     display: flex;
-    gap: 42px;
+    gap: 20px;
 }
 
 .footer__social a img{
     width: 24px; 
     height: 24px;
+    cursor: pointer;
+}
+
+
+
+
+.header__nav-list_item-link--en svg rect {
+    stroke: #242424;
+    stroke-width: 2;
+    border-radius: 2px;
+}
+
+.header__nav-list_item-link--en svg text {
+    font-family: "Share Tech Mono", sans-serif;
+    font-size: 14px;
+    font-weight: 400;
+    pointer-events: none; 
+}
+
+/* Hover */
+.header__nav-list_item-link--en:hover svg rect {
+    fill: #242424;
+}
+
+.header__nav-list_item-link--en:hover svg text {
+    fill: #fff;
 }
